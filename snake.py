@@ -55,6 +55,11 @@ def show_score(choice, color, font, size):
 
     game_window.blit(score_surface, score_rect)
 
+# music
+
+pygame.mixer.music.load('musicao.mp3')
+pygame.mixer.music.play(-1)
+
 # game loop
 
 while True:
@@ -127,4 +132,3 @@ while True:
     show_score(1,white, 'consolas', 20)
     pygame.display.update()
     fps_controller.tick(speed)
-    
